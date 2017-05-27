@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:rowCount="7"
+  app:columnCount="2"
+  android:paddingLeft="20dp"
+  android:paddingRight="50dp"
+  >
+
+  <TextView
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="0"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/DisplayName" />
+  
+  <EditText
+    android:id="@+id/setting_display_name"
+    app:layout_row="0"
+    app:layout_column="1"
+    app:layout_gravity="fill_horizontal|center_vertical"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="1"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/MotionSteering" />
+  
+  <ToggleButton
+    style="@style/SettingToggle"
+    android:theme="@style/SettingToggle"
+    android:id="@+id/setting_motion_str"
+    app:layout_row="1"
+    app:layout_column="1"
+    app:layout_columnWeight="1"
+    app:layout_gravity="left|center_vertical" />
+
+  <TextView
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="2"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/MotorFlip" />
+
+  <ToggleButton
+    style="@style/SettingToggle"
+    android:theme="@style/SettingToggle"
+    android:id="@+id/setting_motor_flip"
+    app:layout_row="2"
+    app:layout_column="1"
+    app:layout_columnWeight="1"
+    app:layout_gravity="left|center_vertical" />
+
+  <TextView
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="3"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/ServoFlip" />
+
+  <ToggleButton
+    style="@style/SettingToggle"
+    android:theme="@style/SettingToggle"
+    android:id="@+id/setting_servo_flip"
+    app:layout_row="3"
+    app:layout_column="1"
+    app:layout_columnWeight="1"
+    app:layout_gravity="left|center_vertical" />
+
+  <TextView
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="4"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/ServoSwing" />
+  
+  <SeekBar
+    android:id="@+id/seekbar_servo_swing"
+    android:theme="@style/SettingSeekBar"
+    style="@style/SettingSeekBar"
+    app:layout_row="4"
+    app:layout_column="1"
+    app:layout_columnWeight="1"
+    app:layout_gravity="fill_horizontal|center_vertical"
+    android:layout_height="wrap_content"
+    android:max="150" />
+
+  <TextView
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="5"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/ServoTrim" />
+
+  <SeekBar
+    android:id="@+id/seekbar_servo_trim"
+    android:theme="@style/SettingSeekBar"
+    style="@style/SettingSeekBar"
+    app:layout_row="5"
+    app:layout_column="1"
+    app:layout_columnWeight="1"
+    app:layout_gravity="fill_horizontal|center_vertical"
+    android:layout_height="wrap_content"
+    android:max="60" />
+
+  <TextView
+    android:id="@+id/label_subservo_trim"
+    style="@style/SettingLabel"
+    app:layout_rowWeight="1"
+    app:layout_row="6"
+    app:layout_column="0"
+    app:layout_gravity="right|center_vertical"
+    android:text="@string/SubServoTrim" />
+
+  <SeekBar
+    android:id="@+id/seekbar_subservo_trim"
+    android:theme="@style/SettingSeekBar"
+    style="@style/SettingSeekBar"
+    app:layout_row="6"
+    app:layout_column="1"
+    app:layout_columnWeight="1"
+    app:layout_gravity="fill_horizontal|center_vertical"
+    android:layout_height="wrap_content"
+    android:max="60" />
+
+</android.support.v7.widget.GridLayout>

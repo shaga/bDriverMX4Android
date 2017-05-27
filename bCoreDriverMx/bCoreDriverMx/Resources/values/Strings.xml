@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">bCoreDriverMx</string>
+  <string name="ScanTitle">Scan Your Car!</string>
+  <string name="ScanStart">Start Scan</string>
+  <string name="ScanStop">Stop Scan</string>
+  <string name="DisplayName">Name:</string>
+  <string name="MotionSteering">MotionStr:</string>
+  <string name="MotorFlip">MotofFlip:</string>
+  <string name="ServoFlip">ServoFlip:</string>
+  <string name="ServoSwing">ServoSwing:</string>
+  <string name="ServoTrim">ServoTrim:</string>
+  <string name="SubServoTrim">Sub-ServoTrim:</string>
+  <string name="EditSetting">Edit</string>
+
+  <string name="MsgConnecting">Connecting...</string>
+  <string name="MsgInitializing">Initializing...</string>
+
+  <string name="ToggleLabelPO1">PO1</string>
+  <string name="ToggleLabelPO2">PO2</string>
+  <string name="ToggleLabelPO3">PO3</string>
+  <string name="ToggleLabelPO4">PO4</string>
+
+  <string name="ToastMsgDeniedLocaitonPermission">Close applicaiton because you denied location permission required to scan bCore.</string>
+  <string name="ToastMsgRequireLocationPermission">Location Permission required to scan bCore.Please allow in App Settings.</string>
+  <string name="ToastMsgDisconnected">Disconnected from bCore.</string>
+  <string name="ToastMsgDisableBluetooth">Bluetooth is disabled. Please set bluetooth to enable in App Setings.</string>
+</resources>

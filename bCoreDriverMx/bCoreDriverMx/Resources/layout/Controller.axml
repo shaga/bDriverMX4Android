@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+  <TextView
+    android:id="@+id/text_battery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="POW:0.00[V]"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="5dp"/>
+
+  <bcoredrivermx.views.controls.StickView
+    android:id="@+id/stick_view"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"/>
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true">
+
+    <View android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:orientation="horizontal">
+      
+      <ToggleButton
+        android:id="@+id/toggle_po1"
+        android:theme="@style/PortOutToggle"
+        style="@style/PortOutToggle"
+        android:textOn="@string/ToggleLabelPO1"
+        android:textOff="@string/ToggleLabelPO1"
+      />
+
+      <ToggleButton
+        android:id="@+id/toggle_po2"
+        android:theme="@style/PortOutToggle"
+        style="@style/PortOutToggle"
+        android:textOn="@string/ToggleLabelPO2"
+        android:textOff="@string/ToggleLabelPO2"
+      />
+
+      <ToggleButton
+        android:id="@+id/toggle_po3"
+        android:theme="@style/PortOutToggle"
+        style="@style/PortOutToggle"
+        android:textOn="@string/ToggleLabelPO3"
+        android:textOff="@string/ToggleLabelPO3"
+        />
+
+      <ToggleButton
+        android:id="@+id/toggle_po4"
+        android:theme="@style/PortOutToggle"
+        style="@style/PortOutToggle"
+        android:textOn="@string/ToggleLabelPO4"
+        android:textOff="@string/ToggleLabelPO4"
+      />
+
+      <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+</RelativeLayout>

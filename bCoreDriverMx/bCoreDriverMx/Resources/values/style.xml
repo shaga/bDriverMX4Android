@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.NoActionBar">
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="android:windowBackground">@color/window_background</item>
+    <item name="windowActionModeOverlay">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:keepScreenOn">true</item>
+  </style>
+  
+  <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Toolbar Title Color-->
+    <item name="android:textColorPrimary">#333333</item>
+    <!-- Toolbar menu overflow icon color -->
+    <item name="android:textColorSecondary">#333333</item>
+  </style>
+
+  <style name="ThemeSplash" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_image</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+  
+  <style name="SettingToggle" parent="MyTheme">
+    <item name="android:background">@drawable/ToggleSwitchSelector</item>
+    <item name="android:button">@drawable/ToggleSwitchButton</item>
+    <item name="android:layout_width">48dp</item>
+    <item name="android:layout_height">36dp</item>
+    <item name="android:textOn"></item>
+    <item name="android:textOff"></item>
+  </style>
+
+  <style name="SettingLabel" parent="MyTheme">
+
+    <item name="android:layout_marginRight">30dp</item>
+
+  </style>
+
+  <style name="SettingSeekBar" parent="MyTheme">
+    <item name="android:thumb">@drawable/SeekBarThumb</item>
+    <item name="android:progressDrawable">@drawable/SeekBarSelector</item>
+  </style>
+
+  <style name="PortOutToggle" parent="MyTheme">
+    <item name="android:textColor">@drawable/TogglePortOutTextColor</item>
+    <item name="android:background">@drawable/TogglePortOutSelector</item>
+    <item name="android:button">@null</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_margin">5dp</item>
+  </style>
+
+</resources>
